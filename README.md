@@ -29,8 +29,8 @@ Things you may want to cover:
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text||
+|image|string||
 |user_id|integer|null: false|
 |group_id|integer|null: false|
 ### Association
@@ -40,20 +40,22 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|username|string|null: false|
+|name|string|null: false|
 |e-mail|string|null: false|
 |password|integer|null: false|
 ### Association
 - has_many :messages
+  has_many :groups_users
 - has_many :groups, thorough: :groups_users
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|name|string|null: false|
 |password|integer|null: false|
 ### Association
 - has_many :messages
+  has_many :groups_users
 - has_many :users, thorough: :groups_users
 
 ## groups_usersテーブル
