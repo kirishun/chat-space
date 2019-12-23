@@ -61,8 +61,8 @@ Things you may want to cover:
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groups_id|string|null: false|
-|users_id|string|null: false|
+|group_id|string|null: false|
+|user_id|string|null: false|
 ### Association
 - belongs_to :user
 - belongs_to :group
