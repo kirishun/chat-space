@@ -1,0 +1,59 @@
+.chat-main
+
+  .main-header
+
+    .header-leftbox
+      %p.group-name
+        グループの名前だよ
+      %ul.member-list
+        %li.member
+          Member: メンバーだよ
+
+    .edit-btn
+      Edit
+    = link_to "#" do
+      %p.edit-box
+
+  .message
+    .message-list
+      .upper-info
+        %p.talker
+          メッセージを投稿した人の名前です。
+        %p.date
+          2019/12/25(Wed)16:36:59
+      .text
+        投稿した内容です。
+    .message-list
+      .upper-info
+        %p.talker
+          メッセージを投稿した人の名前です。
+        %p.date
+          2019/12/25(Wed)16:36:59
+      .text
+        投稿した内容です。
+    .message-list
+      .upper-info
+        %p.talker
+          メッセージを投稿した人の名前です。
+        %p.date
+          2019/12/25(Wed)16:36:59
+      .text
+        投稿した内容です。
+    .message-list
+      .upper-info
+        %p.talker
+          メッセージを投稿した人の名前です。
+        %p.date
+          2019/12/25(Wed)16:36:59
+      .text
+        投稿した内容です。
+
+  .form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit",value: "Send", class: "submit-btn"}
+
