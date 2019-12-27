@@ -45,8 +45,8 @@ Things you may want to cover:
 |password|integer|null: false|
 ### Association
 - has_many :messages
-  has_many :groups_users
-- has_many :groups, thorough: :groups_users
+  has_many :group_users
+- has_many :groups, thorough: :group_users
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -54,10 +54,10 @@ Things you may want to cover:
 |name|string|null: false|
 ### Association
 - has_many :messages
-  has_many :groups_users
-- has_many :users, thorough: :groups_users
+  has_many :group_users
+- has_many :users, thorough: :group_users
 
-## groups_usersテーブル
+## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_id|string|null: false,foreign_key :true|
