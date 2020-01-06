@@ -139,8 +139,6 @@ $(function(){
      return html;
     };
   };
-
-  upper_message
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
   }
