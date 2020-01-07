@@ -12,10 +12,9 @@
             = user.name
         
 
-    .edit-btn
-      = link_to edit_group_path(@group) do
-        Edit
-     
+    = link_to edit_group_path(@group), class: "edit-btn" do 
+      Edit
+    
 
   .messages
     = render @messages
