@@ -61,17 +61,22 @@
         height: 45px;
         margin-bottom: 40px;
       }
-      
-        .group--name { 
-          font-size: 15px;
-          color: $whiteColor;
-          margin-bottom: 5px;
-        }
 
-        .group--message {
-          font-size: 11px;
-          color: $whiteColor;
+
+        .message-path {
+          text-decoration: none;
         }
+        
+          .group--name { 
+            font-size: 15px;
+            color: $whiteColor;
+            margin-bottom: 5px;
+          }
+
+          .group--message {
+            font-size: 11px;
+            color: $whiteColor;
+          }
 
   .chat-main {
     background-color: $whiteColor;
